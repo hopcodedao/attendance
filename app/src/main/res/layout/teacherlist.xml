@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/teachername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="16dp"
+        android:text="Nguyễn Hoà Hợp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teachername"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Khoa:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/teacherfaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teachername"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="4dp"
+        android:text="Công nghệ thông tin"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacherfaculty"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Bằng cấp:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacherfaculty"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="4dp"
+        android:text="Thạc sĩ"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/degree"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Email:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/teacheremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/degree"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="4dp"
+        android:text="nguyenhoahop1903@gmail.com"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey" />
+
+</RelativeLayout>

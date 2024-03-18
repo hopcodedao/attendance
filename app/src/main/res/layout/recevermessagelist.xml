@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="5dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/notificationIcon"
+        android:layout_width="33dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tác giả:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_toEndOf="@id/author"
+        android:fontFamily="@font/baloo"
+        android:text="Nguyễn Hoà Hợp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="-19dp"
+        android:text="hh:mm dd/mm/yyyy"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/subjectLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeStamp"
+        android:layout_marginTop="5dp"
+        android:text="Chủ đề:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectLabel"
+        android:layout_marginStart="8dp"
+        android:text="Good morning"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/messageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject"
+        android:text="Nội dung:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageLabel"
+        android:layout_marginStart="8dp"
+        android:maxLines="4"
+        android:text="Today holiday"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/message"
+        android:background="#CCCCCC"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/profileimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/rounded_image"
+        android:backgroundTint="@color/white"
+        android:clipToOutline="true"
+        android:contentDescription="@string/profile_pic"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:text = "Nguyễn Hoà Hợp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text = "nguyenhoahop1903@gmail.com"
+        android:textColor="#000000"/>
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/showdegreet"
+                android:layout_width="138dp"
+                android:paddingEnd="20sp"
+                android:text="Bằng cấp:"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/showdegree"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="-----,-----"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/showyearr"
+                android:layout_width="138dp"
+                android:paddingEnd="20sp"
+                android:text="@string/year"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/showyear"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="-----,-----"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="138dp"
+            android:paddingEnd="20sp"
+            android:text="Khoa:"
+            android:textAlignment="textEnd"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/showfacutly"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="------------"
+            android:textAlignment="textStart"
+            android:textColor="#000000" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/showmajorr"
+                android:layout_width="155dp"
+                android:paddingEnd="20sp"
+                android:text="@string/majors"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/showmajor"
+                android:layout_width="wrap_content"
+                android:text="@string/_941264536383012"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/showclasss"
+                android:layout_width="138dp"
+                android:paddingEnd="20sp"
+                android:text="@string/clazz"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/showclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/mssvs"
+                android:layout_width="138dp"
+                android:paddingEnd="20sp"
+                android:text="@string/mssv"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/mssv"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="138dp"
+                android:paddingEnd="20sp"
+                android:text="Ngày sinh:"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Birthofdate"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="--/--/----"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:paddingEnd="20sp"
+                android:text="@string/phone_number"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Contact"
+                android:layout_width="wrap_content"
+                android:text="+83----------"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:paddingEnd="20sp"
+                android:text="@string/address"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="120dp"
+                android:layout_height="72dp"
+                android:maxLines="3"
+                android:text="----------------------\n---------------\n--------"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+    <ProgressBar
+        android:id="@+id/profilepb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/AppTheme.WhiteAccent"/>
+</LinearLayout>
